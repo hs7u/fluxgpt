@@ -1,0 +1,49 @@
+{
+  "properties": [
+    {
+      "name": "openai.base-url",
+      "type": "java.lang.String",
+      "description": "api base url"
+    },
+    {
+      "name": "openai.token",
+      "type": "java.lang.String",
+      "description": "api token"
+    },
+    {
+      "name": "news1",
+      "type": "java.lang.String",
+      "description": "A description for 'news1'"
+    },
+    {
+      "name": "news2",
+      "type": "java.lang.String",
+      "description": "A description for 'news2'"
+    },
+    {
+      "name": "news3",
+      "type": "java.lang.String",
+      "description": "A description for 'news3'"
+    },
+    {
+      "name": "news4",
+      "type": "java.lang.String",
+      "description": "A description for 'news3'"
+    },
+    {
+      "name": "news5",
+      "type": "java.lang.String",
+      "description": "A description for 'news3'"
+    },
+    {
+      "name": "news6",
+      "type": "java.lang.String",
+      "description": "A description for 'news3'"
+    },
+    {
+      "name": "news7",
+      "type": "java.lang.String",
+      "description": "A description for 'news3'"
+    }
+  ]
+}

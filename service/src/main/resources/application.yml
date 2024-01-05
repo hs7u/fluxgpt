@@ -1,0 +1,33 @@
+spring:
+  r2dbc:
+    pool:
+      enabled: true
+      initial-size: 50
+      max-size: 100
+    url: r2dbcs:mysql://127.0.0.1:3306/example?useSSL=false
+    username: root
+    password: password
+  
+  data:
+    redis:
+      database: 0
+      host: 127.0.0.1
+      port: 6379
+      connect-timeout: 15s
+      timeout: 15s
+  
+  ## Using Redisson settings
+  # redis:
+  #   redisson:
+  #     config: classpath:redisson.yaml
+  
+  profiles:
+    include:
+    - test
+  
+server:
+  port: 8080
+
+openai:
+  baseUrl: https://api.openai.com/
+  token: token
