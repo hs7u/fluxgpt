@@ -1,6 +1,7 @@
-drop table if exists `product_advice_record`;
+CREATE DATABASE IF NOT EXISTS `example`;
+USE `example`;
 
-create table `product_advice_record` (
+CREATE TABLE IF NOT EXISTS `product_advice_record` (
     `id` bigint not null auto_increment,
     `code` varchar(64) not null comment '編碼',
     `content` mediumtext not null comment 'AI回答',

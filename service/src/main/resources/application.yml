@@ -5,7 +5,7 @@ spring:
       initial-size: 50
       max-size: 100
     url: r2dbcs:mysql://127.0.0.1:3306/example?useSSL=false
-    username: root
+    username: dev-user
     password: password
   
   data:

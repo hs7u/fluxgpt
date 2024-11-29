@@ -9,7 +9,9 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.util.CollectionUtils;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.openai.NullCallException;
 import com.openai.completion.ChatCompletionRequest;
@@ -34,7 +36,7 @@ import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Mono;
 
 @Slf4j
-// @RestController
+@RestController
 public class APITestController {
     
     static final ModelEnum MODEL = ModelEnum.GPT_3_5_TURBO_1106;
@@ -56,7 +58,7 @@ public class APITestController {
     static final String prompt2 = "What's the weather like in Tokyo ?";
     static final String prompt3 = "What's the recipe of Pad Thai ?";
 
-    // @GetMapping("chat")
+    @GetMapping("chat")
     public Mono<ChatMessage> chat() {
 
         List<ChatMessage> messages = new ArrayList<>();

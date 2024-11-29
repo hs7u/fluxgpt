@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  mysql:
+    image: mysql:8.0.18
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./analyzer_record.sql:/docker-entrypoint-initdb.d/init.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: p@ssw0rd
+      MYSQL_USER: dev-user
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: example
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
